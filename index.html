@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Calculatior</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    
+    <div class="calculator--wrapper">
+        <h3>Measurements</h3>
+        <p>Your Height and Weight : </p>
+        <div class="calculator--input-wrapper">
+            <div class="input--text">
+                <p>Height</p>
+            </div>
+            <div class="range-slider">
+                <input class="range-slider__range" type="range" value="162" min="162" max="192" step="1" id="height--slider">
+            </div>
+            <div class="input--value">
+                <span id="height--text">162</span>
+                <span>CM</span>
+            </div>
+        </div>
+        <div class="calculator--input-wrapper">
+            <div class="input--text">
+                <p>Weight</p>
+            </div>
+            <div class="range-slider">
+                <input class="range-slider__range" type="range" value="46" min="46" max="90" step="1" id="weight--slider">
+            </div>
+            <div class="input--value">
+                <span id="weight--text">46</span>
+                <span>KG</span>
+            </div>
+        </div>
+        <div class="size--btn">
+            <button id="find-my-size" class="find--my-size">Find my size</button>
+        </div>
+        <div class="perference--size hide" id="preference--size">
+            <h2>Preference Size</h2>
+            <p id="size">M</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
